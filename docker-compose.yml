@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  node-ubuntu-api:
+    build: .
+    container_name: node-ubuntu-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
