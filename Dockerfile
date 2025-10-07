@@ -3,7 +3,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Install only the two dependencies directly
-RUN npm install express dockerode --omit=dev
+RUN npm install express dockerode dotenv --omit=dev
 
 # Copy application code
 COPY server.js /app/
