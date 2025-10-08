@@ -1,0 +1,1 @@
+ curl -X POST http://localhost:8000/containers/create/mycontainer   -H "Content-Type: application/json"   -d '{"username":"tanu","password":"123"}'
